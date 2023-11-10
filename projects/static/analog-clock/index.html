@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arman's Clock</title>
+    
+    <link rel="stylesheet" href="fonts/Vazirmatn/Vazirmatn-font-face.css">
+    <script type="module" crossorigin src="/assets/index-c5714571.js"></script>
+    <link rel="stylesheet" href="/assets/index-768e6d57.css">
+  </head>
+  <body class="bg-slate-100 dark:bg-gray-950 flex items-center justify-center w-full min-h-screen">
+    <div class="py-8 px-8 md:px-16 md:py-16 bg-white dark:bg-gray-900 dark:shadow-none rounded-2xl shadow-lg shadow-slate-500/50 grid md:grid-cols-2 gap-x-8 gap-y-16">
+      <div class="overflow-hidden border-2 relative border-slate-200 rounded-full dark:bg-black dark:shadow-none bg-white p-36 shadow-lg shadow-slate-500/50 flex items-center justify-center">
+        <div class="absolute w-full h-full flex items-center justify-center">
+          <div class="h-1 aspect-square absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[30deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[60deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[90deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[120deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[150deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[180deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[210deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[240deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[270deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[300deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          <div class="h-1 aspect-square rotate-[330deg] absolute">
+            <div class="bg-slate-500 h-1 rounded-full w-10 translate-x-36"></div>
+          </div>
+          
+        </div>
+        <div class="absolute w-full h-full flex items-center justify-center">
+          <div id="index-div-sec_hand" class="w-1 aspect-square absolute">
+            <div class="bg-red-600 h-24 rounded-full w-1 -translate-y-12"></div>
+          </div>
+          <div id="index-div-min_hand" class="w-1 aspect-square absolute">
+            <div class="bg-black dark:bg-white h-20 rounded-full w-1 -translate-y-10"></div>
+          </div>
+          <div id="index-div-hour_hand" class="w-1 aspect-square absolute">
+            <div class="bg-black dark:bg-white h-16 rounded-full w-1 -translate-y-8"></div>
+          </div>
+          <div class="w-2 aspect-square rounded-full bg-black dark:bg-white z-10"></div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <p dir="rtl" id="index-p-time" class="text-xl dark:text-white">درحال پردازش...</p>
+        <p dir="rtl" id="index-p-date" class="mt-4 text-3xl dark:text-white">درحال پردازش...</p>
+        <p dir="rtl" class="mt-4 text-slate-500 dark:text-gray-500">به وقت عادی ایران (+3:30)</p> 
+        <button id="index-btn-theme" class="bg-slate-300 relative dark:bg-black p-1 grid grid-cols-2 rounded-xl mt-4 md:mt-8">
+            <div id="index-div-themeDiv" class="w-full p-4 bg-slate-100 dark:bg-gray-800 rounded-lg duration-200 transition-transform"></div>
+            <div class="col-span-2 flex justify-between w-full absolute p-2">
+              <div class="text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>              
+              </div>
+              <div class="text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg> 
+              </div>
+            </div>
+        </button>
+      </div>
+    </div>
+    
+  </body>
+</html>
